@@ -17,8 +17,7 @@ void loop() {
     int b = 75;
     strip.setPixelColor(i, strip.Color(r, g, b));
     strip.setBrightness(60);
-    strip.show();
   }
-
+    strip.show();
 }
 
