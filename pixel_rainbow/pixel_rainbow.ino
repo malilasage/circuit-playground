@@ -9,15 +9,15 @@ void setup() {
 }
 
 void loop() {
-  int g = 5;
-  int r = 30;
-  int b = 20;
   for(int i = 0; i < nPixels; i++) {
+    int g = random(255);
+    int r = random(255);
+    int b = random(255);
     strip.setPixelColor(i, strip.Color(g, r, b));
     strip.setBrightness(40);
-    g += 20;
-    r += 10;
-    b += 15;
+//    g += 20;
+//    r += 10;
+//    b += 15;
     strip.show();
   }
 }
