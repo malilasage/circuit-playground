@@ -76,6 +76,7 @@ class NeoPatterns : public Adafruit_NeoPixel
     for(int i=0; i<numPixels(); i++)
     {
       setPixelColor(i, Wheel(((i * 256 / numPixels()) + Index & 255)));
+      setBrightness(40);
     }
     show();
     Increment();
